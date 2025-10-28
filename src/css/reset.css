@@ -1,4 +1,11 @@
 /* Reset and base styles  */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 * {
 	padding: 0px;
 	margin: 0px;
@@ -8,12 +15,22 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: var(--font-weight-700);
+	font-style: normal;
 }
 
 /* Links */
+a {
+	color: inherit;
+}
 
-a, a:link, a:visited  {
+a:link, a:visited  {
     text-decoration: none;
 }
 
